@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سیاست حریم خصوصی — پر کن</title><meta name="description" content="سیاست حریم خصوصی افزونه پر کن: داده فقط روی کامپیوتر شما می‌ماند و هیچ درخواست شبکه‌ای ارسال نمی‌شود.">
+<style>
+@font-face{font-family:PKV;font-weight:400;src:url(fonts/Vazir.ttf) format("truetype")}
+@font-face{font-family:PKV;font-weight:700;src:url(fonts/Vazir-Bold.ttf) format("truetype")}
+:root{--bg:#f4f6f9;--fg:#172033;--mut:#4d586e;--acc:#0e7a5b;--line:#dde2ea;--surface:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1420;--fg:#e8edf5;--mut:#a8b3c6;--acc:#34c79a;--line:#26324a;--surface:#151d2c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.9 PKV,Vazirmatn,Tahoma,sans-serif}
+header{background:var(--surface);border-bottom:1px solid var(--line)}
+header div,main{max-width:760px;margin:0 auto;padding:0 16px}
+header div{display:flex;align-items:center;gap:12px;height:56px}
+header a{color:var(--fg);font-weight:700;text-decoration:none}header a.back{margin-inline-start:auto;font-weight:400;color:var(--acc)}
+main{padding-block:32px 64px}section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 24px 16px;margin-bottom:24px}
+h1{font-size:1.5rem;margin:.8em 0 .2em}h2{font-size:1.125rem;margin:1.4em 0 .2em;color:var(--acc)}p,li{color:var(--mut)}li{margin:.2em 0}
+code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 .3em;font-size:.9em;direction:ltr;unicode-bidi:isolate}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}</style></head><body>
+<header><div><a href="./">پر کن</a><a class="back" href="./">بازگشت به صفحه اصلی</a></div></header>
+<main>
+<section dir="rtl" lang="fa"><h1>سیاست حریم خصوصی — پر کن</h1>
+<p>آخرین به‌روزرسانی: ۱۴۰۵/۰۷/۱۲</p>
+<p>«پر کن» افزونه مرورگر برای ثبت یک‌باره اطلاعات مشتری و درج سریع آن در فرم‌هاست. این سند توضیح می‌دهد چه داده‌ای کجا می‌ماند.</p>
+<h2>۱. چه داده‌ای نگه می‌دارد</h2>
+<ul>
+<li>اطلاعاتی که خودتان در پنل افزونه وارد می‌کنید (نام، کد ملی، موبایل، کد پستی، VIN، پلاک، تاریخ تولد، شاسی، موتور، و در صورت فعال‌کردن، اطلاعات کارت).</li>
+<li>وضعیت لایسنس: «شناسه دستگاه» (یک رشته تصادفی که افزونه خودش می‌سازد)، تاریخ شروع دوره آزمایشی و کلید لایسنس.</li>
+</ul>
+<h2>۲. داده کجا ذخیره می‌شود</h2>
+<ul>
+<li>فقط در حافظه داخلی افزونه روی همین مرورگر و همین کامپیوتر (<code>storage.local</code>).</li>
+<li><b>CVV2 و رمز شخصی ذخیره دائمی نمی‌شوند.</b> فقط در حافظه موقت مرورگر می‌مانند و با بستن مرورگر پاک می‌شوند.</li>
+<li>رمز ورود سایت‌ها (فیلد password با برچسبی غیر از «رمز شخصی») هرگز خوانده یا ذخیره نمی‌شود.</li>
+</ul>
+<h2>۳. چه چیزی ارسال نمی‌شود</h2>
+<ul>
+<li>افزونه <b>هیچ درخواست شبکه‌ای نمی‌فرستد</b>: نه اطلاعات مشتری، نه آمار استفاده، نه گزارش خطا. سرور و حساب کاربری ندارد.</li>
+<li>هیچ ابزار تحلیل (analytics)، تبلیغ یا کتابخانه شخص ثالث ندارد. همه کد و فونت‌ها داخل بسته افزونه است.</li>
+<li>فعال‌سازی لایسنس کاملاً آفلاین است: امضای کلید با کلید عمومی داخل افزونه بررسی می‌شود.</li>
+</ul>
+<h2>۴. چرا دسترسی به همه سایت‌ها لازم است</h2>
+<p>افزونه باید در هر فرم مرورگر که کاربر کار می‌کند، پنل و پیشنهاد را نشان دهد و مقدار را در فیلد انتخاب‌شده بنویسد. افزونه فقط فیلدهای قابل‌ویرایش را بررسی می‌کند و محتوای صفحه را جمع‌آوری یا ارسال نمی‌کند.</p>
+<h2>۵. حذف داده</h2>
+<ul>
+<li>دکمه «پاک کردن» اطلاعات همان مشتری را حذف می‌کند.</li>
+<li>با حذف افزونه از مرورگر، همه داده‌های آن پاک می‌شود.</li>
+</ul>
+<h2>۶. تماس</h2>
+<p>پشتیبانی: ۰۹۳۹۶۵۷۴۵۳۱</p></section>
+<section dir="ltr" lang="en"><h1>Privacy Policy — Porkon (English summary)</h1>
+<p>Porkon stores the customer details you type into its panel <b>only on your own device</b> (browser extension storage). CVV2 and personal-password values are kept in temporary browser memory and are cleared when the browser closes. The extension makes <b>no network requests</b>, has no server or account, no analytics and no third-party code. License activation is fully offline (signature verification with a public key bundled in the extension). Site access (<code>&lt;all_urls&gt;</code>) is needed only to show the panel and write the chosen value into the field you select on any website; page content is not collected or transmitted. Contact: 09396574531</p></section>
+</main></body></html>
